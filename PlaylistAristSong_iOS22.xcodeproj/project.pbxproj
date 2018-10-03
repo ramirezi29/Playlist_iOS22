@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		4725C6D32165201100244C4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725C6D22165201100244C4B /* AppDelegate.swift */; };
-		4725C6D52165201100244C4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725C6D42165201100244C4B /* ViewController.swift */; };
 		4725C6D82165201100244C4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4725C6D62165201100244C4B /* Main.storyboard */; };
 		4725C6DA2165201200244C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4725C6D92165201200244C4B /* Assets.xcassets */; };
 		4725C6DD2165201200244C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4725C6DB2165201200244C4B /* LaunchScreen.storyboard */; };
+		4725C6EA216524B900244C4B /* tableViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725C6E9216524B900244C4B /* tableViewBackground.swift */; };
+		4725C6EC216524F500244C4B /* PlaylistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725C6EB216524F500244C4B /* PlaylistTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4725C6CF2165201100244C4B /* PlaylistAristSong_iOS22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaylistAristSong_iOS22.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4725C6D22165201100244C4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4725C6D42165201100244C4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4725C6D72165201100244C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4725C6D92165201200244C4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4725C6DC2165201200244C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4725C6DE2165201200244C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4725C6E9216524B900244C4B /* tableViewBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewBackground.swift; sourceTree = "<group>"; };
+		4725C6EB216524F500244C4B /* PlaylistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,55 @@
 		4725C6D12165201100244C4B /* PlaylistAristSong_iOS22 */ = {
 			isa = PBXGroup;
 			children = (
+				4725C6E82165205D00244C4B /* ExtensionsUI */,
+				4725C6E72165205200244C4B /* ViewController */,
+				4725C6E62165204400244C4B /* ModelController */,
+				4725C6E52165203E00244C4B /* Model */,
+				4725C6E42165203300244C4B /* Resources */,
+			);
+			path = PlaylistAristSong_iOS22;
+			sourceTree = "<group>";
+		};
+		4725C6E42165203300244C4B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				4725C6D22165201100244C4B /* AppDelegate.swift */,
-				4725C6D42165201100244C4B /* ViewController.swift */,
 				4725C6D62165201100244C4B /* Main.storyboard */,
 				4725C6D92165201200244C4B /* Assets.xcassets */,
 				4725C6DB2165201200244C4B /* LaunchScreen.storyboard */,
 				4725C6DE2165201200244C4B /* Info.plist */,
 			);
-			path = PlaylistAristSong_iOS22;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4725C6E52165203E00244C4B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4725C6E62165204400244C4B /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		4725C6E72165205200244C4B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4725C6EB216524F500244C4B /* PlaylistTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4725C6E82165205D00244C4B /* ExtensionsUI */ = {
+			isa = PBXGroup;
+			children = (
+				4725C6E9216524B900244C4B /* tableViewBackground.swift */,
+			);
+			path = ExtensionsUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4725C6D52165201100244C4B /* ViewController.swift in Sources */,
 				4725C6D32165201100244C4B /* AppDelegate.swift in Sources */,
+				4725C6EC216524F500244C4B /* PlaylistTableViewController.swift in Sources */,
+				4725C6EA216524B900244C4B /* tableViewBackground.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7AYJDAX2C;
-				INFOPLIST_FILE = PlaylistAristSong_iOS22/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PlaylistAristSong_iOS22/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7AYJDAX2C;
-				INFOPLIST_FILE = PlaylistAristSong_iOS22/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PlaylistAristSong_iOS22/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
