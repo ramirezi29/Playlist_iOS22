@@ -10,17 +10,18 @@ import Foundation
 import UIKit
 
 extension PlaylistTableViewController {
-    func guitarBackground() {
+    func dotColorBackground() {
+          let backgroundDots = UIImage(named: "dotsLight")
         
-        let imageView = UIImageView(image: backgroundGuitar)
+        let imageView = UIImageView(image: backgroundDots)
         tableView.backgroundView = imageView
         imageView.contentMode = .scaleAspectFill
         
         // Make a blur effect
-        let blurEffect = UIBlurEffect(style: .light)
-        let blurView = UIVisualEffectView(effect: blurEffect)
-        blurView.frame = imageView.bounds
-        imageView.addSubview(blurView)
-        imageView.clipsToBounds = true
+//        let blurEffect = UIBlurEffect(style: .light)
+//        let blurView = UIVisualEffectView(effect: blurEffect)
+//        blurView.frame = imageView.bounds
+//        imageView.addSubview(blurView)
+//        imageView.clipsToBounds = true
     }
 }
